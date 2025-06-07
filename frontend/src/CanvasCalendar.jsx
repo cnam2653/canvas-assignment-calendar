@@ -26,7 +26,7 @@ export default function CanvasCalendar({ setShowTokenForm, userToken }) {
 
   useEffect(() => {
     if (!userToken) return;
-    fetch("http://localhost:5007/courses", {
+    fetch("https://canvas-backend.onrender.com/courses", {
       headers: {
         Authorization: `Bearer ${userToken}`,
       },
